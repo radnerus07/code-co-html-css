@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: OpenSans,Arial, sans-serif;
+    
 }
 .wrapper-main {
     position: relative;
@@ -28,6 +30,7 @@
    
 }
 .navbar-wrapper .brand-logo{
+    font-size: 0;
     float: left;
 }
 .navbar-wrapper .navlinks-wrapper li:not(:last-child){
@@ -67,6 +70,7 @@
 
 }
 .nav-link {
+    font-size: 14px;
     color: #fff;
 }
 .nav-link:hover {

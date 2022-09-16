@@ -23,7 +23,7 @@
 
 }
 
-.nav-menu::after {
+.navbar::after {
     content: "";
     display: block;
     clear: both;

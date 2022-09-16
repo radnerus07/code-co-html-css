@@ -23,7 +23,9 @@
 
 }
 
-.nav-menu {
+.nav-menu::after {
+    content: "";
+    display: block;
     clear: both;
 }
 

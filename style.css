@@ -1,79 +1,92 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: OpenSans, sans-serif, Arial;
 }
-
-.wrapper {
+.wrapper-main {
     position: relative;
     clear: both;
     margin: 0 0 41px 0;
 }
 
+
+.navbar-wrapper{
+    padding: 12px 40px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.2);
+}
+.navbar-wrapper a{
+    text-decoration: none;
+}
+.navbar-wrapper .navlinks-wrapper{
+    padding: 13px 0;
+    display: inline-block;
+}
+.navbar-wrapper .navlinks-wrapper li{
+    display: inline-block;
+    font-size: 14px;
+   
+}
+.navbar-wrapper .brand-logo{
+    float: left;
+}
+.navbar-wrapper .navlinks-wrapper li:not(:last-child){
+    margin: 0 30px 0 0;
+   
+}
+
+.submit-btn  {
+    width: 129px;
+    height: auto;
+    background-color: #2086fb;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 15px;
+
+}
+.navbar-wrapper .submit-btn{
+    float: right;
+}
+.brand-logo img{
+    height: 44px;
+    width: auto;
+}
+.navbar-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.banner-image {
+    height: 568px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://live.staticflickr.com/65535/52347598683_bc3cb9b567_h.jpg");
+    background-size: cover;
+
+}
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: black;
+}
 .text-center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.nav {
-    float: left;
-
-}
-
-.navbar::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.navbar {
-    font-size: 0;
-    height: 68px;
-    background-color: rgb(255 255 255 / 33%);
-    box-shadow: 0px 0px 5px 0 #777;
-}
-
-
-.nav-brand,
-img {
-    width: 75px;
-    height: 44px;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 14px;
     color: #fff;
-
+    text-align: center;
 }
-
-@media screen and (max-width: 1050px) {
-    .nav-link {
-        font-size: 10px;
-    }
-}
-
-.nav-item {
-    list-style: none;
-    display: inline;
-    margin: 0px 30px 0px 0;
-
-}
-
-.card-lists::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.search {
+.search-icon{
     position: relative;
+    border:5px solid rgba(255,255,255,0.2);
+    
 }
 
-.search .fa-solid {
+.search-icon .fa-solid {
     position: absolute;
     top: 35%;
     left: 97%;
@@ -82,67 +95,17 @@ img {
     background-color: #fff;
 
 }
-
-.button {
-    text-align: right;
-}
-
-.submit-btn {
-    width: 129px;
-    height: 40px;
-    background-color: #2086fb;
-    border: none;
-    border-radius: 50px;
-    color: white;
-
-}
-
-.logo,
-.button {
-    width: 15%;
-    height: auto;
-}
-
-.logo {
-    padding: 12px 0 12px 40px;
-}
-
-.button {
-    padding: 14px 40px 14px 0;
-}
-
-.content {
-    width: 70%;
-    text-align: center;
-    margin: 25px 0px 24px 0;
-}
-
-.nav-link:hover {
-    color: black;
-}
-
-.banner-image {
-    height: 568px;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://live.staticflickr.com/65535/52347598683_bc3cb9b567_h.jpg");
-    background-size: cover;
-
-}
-
 .form-control {
     width: 926px;
     height: 53px;
-    border-width: 5px;
-    border-color: rgba(0, 0, 0, 0.6);
+    
 }
-
 .innertext {
     color: white;
     font-size: 30px;
     text-align: center;
     margin: 0 0 24px 0;
 }
-
 .cards {
     margin: 0 15px 40px;
 
@@ -171,7 +134,11 @@ img {
     height: 80px;
     margin: 52px 0 24px;
 }
-
+.card-lists::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 .card-title {
     font-size: 18px;
     margin: 0 0 10px 0;
@@ -191,7 +158,7 @@ img {
     position: relative;
 }
 
-.content-center {
+.footer-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -201,16 +168,16 @@ img {
     font-family: OpenSans-Semibold, sans-serif, Arial;
 }
 
-.content-center h4 {
+.footer-content h4 {
     font-size: 30px;
     margin: 0 0 4px 0;
 }
 
-.last {
+.secondary {
     width: 223px;
 }
 
-.content-center p {
+.footer-content p {
     font-size: 15px;
     text-align: center;
     margin: 0 0 48px 0;

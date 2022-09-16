@@ -5,6 +5,9 @@
     font-family: OpenSans, Arial, sans-serif;
     
 }
+.body{
+    font-family: 'Open Sans', sans-serif;
+}
 .wrapper-main {
     position: relative;
     clear: both;
@@ -84,16 +87,20 @@
     color: #fff;
     text-align: center;
 }
-.search-icon{
+.search-bar-wrapper{
     position: relative;
     border:5px solid rgba(255,255,255,0.2);
+    border-radius: 4px;
     
 }
 
-.search-icon .fa-solid {
+.search-bar-wrapper .fa-solid {
     position: absolute;
-    top: 35%;
-    left: 97%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
     font-size: 15px;
     border: none;
     background-color: #fff;
@@ -102,13 +109,28 @@
 .form-control {
     width: 926px;
     height: 53px;
+    border: none;
+    padding-right: 50px;
     
 }
-.innertext {
+.form-control::placeholder{
+  padding: 15px 0 15px 20px;
+  border: 0;
+  outline: 0;
+}
+
+.search-bar-wrapper input{
+    outline: none;
+}
+.innertext{
+    margin: 0 0 24px 0;
+}
+
+.heading {
     color: white;
     font-size: 30px;
     text-align: center;
-    margin: 0 0 24px 0;
+    
 }
 .cards {
     margin: 0 15px 40px;
@@ -172,8 +194,8 @@
     font-family: OpenSans-Semibold, sans-serif, Arial;
 }
 
-.footer-content h4 {
-    font-size: 30px;
+.footer-content {
+  
     margin: 0 0 4px 0;
 }
 
@@ -181,7 +203,7 @@
     width: 223px;
 }
 
-.footer-content p {
+.footer-content,.sub-content {
     font-size: 15px;
     text-align: center;
     margin: 0 0 48px 0;

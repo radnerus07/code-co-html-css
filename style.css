@@ -73,7 +73,7 @@
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://live.staticflickr.com/65535/52347598683_bc3cb9b567_h.jpg");
     background-size: cover;
-    background-position: center;
+    
 
 }
 .nav-link {
@@ -185,7 +185,7 @@
     line-height: 1.6;
     font-size: 16px;
     margin: 0 32px 60px;
-    line-height: 26px;
+  
 }
 
 .footer {
@@ -208,6 +208,8 @@
 .chat-request{
     padding-right:  40px;
     padding-left: 40px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .footer-content .sub-content {

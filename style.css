@@ -3,11 +3,21 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 .body{
     font-family: 'Open Sans', sans-serif;
 }
-.wrapper__main {
+
+h1,.heading__h1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 41px;
+   
+
+}
+.hero {
     position: relative;
     margin: 0 0 41px 0;
 }
@@ -34,6 +44,7 @@
 .navbar__wrapper .navlinks__wrapper li{
     display: inline-block;
     font-size: 14px;
+    font-weight: bold;
    
 }
  .brand__logo{
@@ -44,23 +55,25 @@
     margin: 0 30px 0 0;
    
 }
-.button{
-    background-color: #2086fb;
+.btn{
     border: none;
     border-radius: 50px;
-    color: white;
     text-align: center;
     text-decoration: none;
-
-}
-
-.btn__primary  {
-    
-    padding: 12px 30px;
+    display: inline-block;
     font-size: 15px;
-
+    font-weight: 600;
 }
+.btn-primary{
+    background-color: #2086fb;
+    color: white;
+}
+.btn-md{
+    padding: 12px 30px;
+}
+
 .navbar__wrapper .submit__btn{
+   
     float: right;
 }
 .brand__logo img{
@@ -128,16 +141,12 @@
     outline: none;
 }
 .wrapper__innertext{
+    
+    font-weight: 600;
     margin: 0 0 24px 0;
 }
 
-.heading {
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    line-height: 41px;
-    
-}
+
 .cards {
    padding: 20px 20px 40px;
    max-width: 1200px;
@@ -151,8 +160,8 @@
     float: left;
     list-style: none;
     text-align: center;
-    border-right: 1px solid grey;
-    border-bottom: 1px solid grey;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
 
 }
 
@@ -180,12 +189,14 @@
     line-height: 24px;
     font-size: 18px;
     margin: 0 0 10px 0;
+    font-weight: 600;
 }
 
 .card__paragraph {
     line-height: 1.6;
     font-size: 16px;
     margin: 0 32px 60px;
+    color: #858585;
   
 }
 
@@ -206,26 +217,49 @@
     font-family: OpenSans-Semibold, sans-serif, Arial;
 }
 
-.chat__request{
+.btn-lg{
    
     padding: 12px 40px;
-    display: inline-block;
+   
 }
 
 .footer__content .sub__content {
     font-size: 15px;
     text-align: center;
     margin: 4px 0 48px 0;
+    font-weight: 600;
 }
 
 .copyright__content {
     height: 68px;
     width: auto;
     background-color: #252525;
+    position: relative;
+    font-weight: 600;
+    
 }
 
  .content__paragraph {
     color: white;
     font-size: 14px;
     padding: 25px 0 24px 40px;
+}
+
+.copyright__content  a{
+    position: absolute;
+    right: 52px;
+    top:-10px;
+    
+}
+
+.btn-dark{
+    background-color: #4a4a4a;
+    color: #979797;
+   
+}
+.btn-sm{
+    min-width:28px;
+    height: 28px;
+    padding: 2px 0;
+    border-radius: 4px;
 }

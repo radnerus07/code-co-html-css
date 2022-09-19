@@ -62,7 +62,7 @@
     height: 44px;
     width: auto;
 }
-.navbar-wrapper::after {
+.clearfix::after {
     content: "";
     display: block;
     clear: both;
@@ -169,11 +169,8 @@
     width: 80px;
     height: auto;
 }
-.card-lists::after {
-    content: "";
-    display: block;
-    clear: both;
-}
+
+
 .card-title {
     line-height: 24px;
     font-size: 18px;
